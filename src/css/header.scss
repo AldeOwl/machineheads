@@ -1,0 +1,101 @@
+.header {
+    height: 88px;
+    display: flex;
+    margin: 80px 103px 0 103px;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:1200px){
+        margin: 20px 57px 0 57px;
+    }
+    @media screen and (max-width:960px){
+        margin: 35px 40px 0 40px;
+    }
+    @media screen and (max-width:768px){
+        margin: 48px 24px 0 24px;
+        align-items: flex-start;
+    }
+    @media screen and (max-width:480px){
+        margin: 25px 16px 0 16px;
+    }
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    &__item {
+        height: 27px;
+        color: #2F3C44;
+        text-decoration: none;
+        box-sizing: border-box;
+        &:hover {
+            border-bottom: 1.5px solid #F46841;
+        }
+        &-arrow {
+            &::after{
+                content: url(../images/Shape.svg);
+                padding: 0 0 0 10px;
+            }
+        }
+        &:last-of-type{
+            color: #F46841;
+            font-weight: 600;
+            &:hover {
+                border-bottom: none;
+            }
+        }
+    }
+    @media screen and (max-width:1200px){
+        display: none;
+    }
+}
+.diagnostic {
+    width: 255px;
+    height: 49px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-color: #88D5C9;
+    background-color: #88D5C9;
+    border-radius: 2px;
+    border-style: none;
+    cursor: pointer;
+    @media screen and (max-width:1200px){
+        display: none;
+    }
+
+}
+.mobile-menu {
+    width: 37px;
+    height: 22px;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media screen and (max-width:1200px){
+        display: flex;
+    }
+}
+.mobile-menu__item {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: 100%;
+    background: #FF9679;
+    border-radius: 4px;
+}
+.mobile-menu__item-second {
+    top: 10px;
+}
+.mobile-menu__item-third {
+    top: 20px;
+}

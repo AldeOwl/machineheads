@@ -1,0 +1,56 @@
+.drop-window {
+    margin: 0 103px 0 103px;
+    background-color: #fff;
+}
+.device {
+    height: 110px;
+    border-bottom: 4px solid #EFEFEF;
+}
+.device-menu {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    &__item {
+        height: 110px;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+        &:hover {
+            border-bottom: 4px solid #FF9679;
+        }
+        &:hover .menu-item__title {
+            color: #FF9679;
+        }
+        &:hover svg #device{
+            fill: #FF9679;
+        }
+        & svg {
+            padding: 0 0 25px 0;
+        }
+        
+    }
+}
+.menu-item__img {
+    width: 22px;
+    height: 34px;
+    padding: 0 0 25px 0;
+    &:hover {
+        fill: #FF9679;
+    }
+}
+.menu-item__title {
+    margin: 0 0 0 18px;
+    padding: 0 0 25px 0;
+    font-family: Gilroy;
+    font-size: 24px;
+    color: #646F75;
+    font-weight: normal;
+    background-color: #fff;
+}
+.device-problem {
+
+}
+.problem-model {
+    background-color: yellow;
+}

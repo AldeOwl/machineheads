@@ -5,18 +5,20 @@
     </div>
     <nav class="menu">
         <a href="#" class="menu__item">О нас</a>
-        <a href="#" class="menu__item">Ремонт</a>
-        <a href="#" class="menu__item">Проблема с устройством</a>
+        <a href="#" id='repairs' class="menu__item">Ремонт</a>
+        <a href="#" id='problem' class="menu__item">Проблема с устройством</a>
         <a href="#" class="menu__item menu__item-arrow">Клиентам</a>
         <a href="#" class="menu__item">Контакты</a>
         <a href="#" class="menu__item">Задать вопрос</a>
         <a href="#" class="menu__item">Магазин</a>
     </nav>
-    <div class="mobile-menu">
-        <div class="mobile-menu__item mobile-menu__item-first"></div>
-        <div class="mobile-menu__item mobile-menu__item-second"></div>
-        <div class="mobile-menu__item mobile-menu__item-third "></div>
+    <div id='main-btn' class="menu-btn">
+        <div class="menu-btn__item menu-btn__item-first"></div>
+        <div class="menu-btn__item menu-btn__item-second"></div>
+        <div class="menu-btn__item menu-btn__item-third "></div>
     </div>
+    {{>mobileMenu}}
     <button class="diagnostic">записаться на диагностику</button>
 </header>
-    {{>dropWindow}}
+    {{>dropWindowPair}}
+    {{>dropWindowProblem}}

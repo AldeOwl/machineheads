@@ -24,7 +24,7 @@
     align-items: center;
 }
 .menu {
-    width: 800px;
+    width: 750px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -72,7 +72,7 @@
     }
 
 }
-.mobile-menu {
+.menu-btn {
     width: 37px;
     height: 22px;
     position: relative;
@@ -84,18 +84,18 @@
         display: flex;
     }
 }
-.mobile-menu__item {
+.menu-btn__item {
     display: block;
     position: absolute;
     top: 0;
-    height: 3px;
+    height: 4px;
     width: 100%;
     background: #FF9679;
     border-radius: 4px;
 }
-.mobile-menu__item-second {
+.menu-btn__item-second {
     top: 10px;
 }
-.mobile-menu__item-third {
+.menu-btn__item-third {
     top: 20px;
 }

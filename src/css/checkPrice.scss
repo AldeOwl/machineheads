@@ -1,0 +1,102 @@
+.check-price {
+    width: 360px;
+    @media screen and (max-width:768px){
+        width: 100%;
+    }
+    &__title {
+        width: 500px;
+        position: relative;
+        margin: 100px 0 0 0;
+        @media screen and (max-width:768px){
+            width: 100%;
+        }
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.title {
+    &__text {
+        position: absolute;
+        margin: 0;
+        font-family: Gilroy;
+        line-height: 48px;
+        font-size: 60px;
+        font-weight: 500;
+        color: #2F3C44;
+        @media screen and (max-width:768px){
+            padding: 0 26px;
+        }
+        @media screen and (max-width:480px){
+            font-size: 38px;
+        }
+    }
+    &__brand {
+        padding-top: 50px;
+        margin-top: 52px;
+        font-family: Gilroy;
+        font-size: 110px;
+        font-weight: 700;
+        color: #2F3C44;
+        @media screen and (max-width:768px){
+            padding: 50px 26px;
+        }
+        @media screen and (max-width:480px){
+            font-size: 70px;
+        }
+        &-img {
+            position: absolute;
+            top: 33%;
+            left: -3%;
+            @media screen and (max-width:768px){
+                top: 24%;
+                left: 1%;
+            }
+            @media screen and (max-width:480px){
+                width: 260px;
+                top: 28%;
+            }
+        }
+    }
+}
+.input {
+    &__item {
+        width: 295px;
+        height: 36px;
+        margin-bottom: 22px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 14px;
+        color: #646F75;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #CAD0D4;
+        outline: none;
+        @media screen and (max-width:768px){
+            width: 90%;
+        }
+    }
+    &__btn {
+        width: 293px;
+        height: 49px;
+        margin-top: 40px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border-color: #FF9679;
+        background-color: #FF9679;
+        border-radius: 2px;
+        border-style: none;
+        outline: none;
+        cursor: pointer;
+        @media screen and (max-width:768px){
+            width: 90%;
+        }
+    }
+}

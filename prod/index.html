@@ -18,7 +18,12 @@
             <a href="#" class="menu__item">О нас</a>
             <a href="#" id='repairs' class="menu__item">Ремонт</a>
             <a href="#" id='problem' class="menu__item">Проблема с устройством</a>
-            <a href="#" class="menu__item menu__item-arrow">Клиентам</a>
+            <a href="#" id="clients" class="menu__item menu__item-arrow">Клиентам</a>
+            <div class="clients">
+                <p class="clients__item">Акции</p>
+                <p class="clients__item">Бонусы</p>
+                <p class="clients__item">Гарантии</p>
+            </div>
             <a href="#" class="menu__item">Контакты</a>
             <a href="#" class="menu__item">Задать вопрос</a>
             <a href="#" class="menu__item">Магазин</a>
@@ -39,14 +44,19 @@
                     <a href="#" class="menu__item">О нас</a>
                     <a href="#" id='mobile-repairs' class="menu__item">Ремонт</a>
                     <a href="#" id='mobile-problem' class="menu__item">Проблема с устройством</a>
-                    <a href="#" class="menu__item menu__item-arrow">Клиентам</a>
+                    <a href="#" id="mobileClients" class="menu__item menu__item-arrow">Клиентам</a>
+                    <div class="mobile-clients">
+                        <p class="mobile-clients__item">Акции</p>
+                        <p class="mobile-clients__item">Бонусы</p>
+                        <p class="mobile-clients__item">Гарантии</p>
+                    </div>
                     <a href="#" class="menu__item">Контакты</a>
                     <a href="#" class="menu__item">Задать вопрос</a>
                     <a href="#" class="menu__item">Магазин</a>
                 </nav>
             </div>
-            <button class="diagnostic-mobile">записаться на диагностику</button>
-        </div>    <button class="diagnostic">записаться на диагностику</button>
+            <button id="diagnosticMobile" class="diagnostic-mobile">записаться на диагностику</button>
+        </div>    <button id="diagnostic" class="diagnostic">записаться на диагностику</button>
     </header>
         <div class="drop-window-pair">
             <div class="cursor">
@@ -214,8 +224,47 @@
             <div class="problem-list">
         
             </div>
-        </div>    
+        </div>    <div class="main-wrap">
+        <div class="check-price">
+            <div class="check-price__title">
+                <h1 class="title__text">Ремонт техники</h1>
+                <h1 class="title__brand">Apple</h1>
+                <img src="../images/Vector.png" class="title__brand-img">
+            </div>
+            <form action="" class="check-price__input">
+                    <input class="input__item" type="text" placeholder="Имя" >
+                    <input class="input__item" type="text" placeholder="Телефон" >
+                    <input class="input__item" type="text" placeholder="Опишите модель устройства и поломку" >
+        
+                <input id="checkPrice" type="submit" value="узнать цену ремонта" class="input__btn">
+            </form>
+        </div>        <div class="slider"></div>
+    </div>
+    <div class="thank-you">
+        <div class="thank-you__wrap">
+            <div id="thankYouClose" class="thank-you__close"></div>
+            <div class="thank-you__content">
+                <h1 class="content__title">Благодарим за заявку!</h1>
+                <p class="content__text">Наш менеджер свяжется с вами в течении 5-ти минут</p>
+                <button id="thankYouBtn" class="content__btn">спасибо!</button>
+            </div>
+        </div>
+    </div>    <div class="singup">
+        <div class="singup__wrap">
+            <div id="singUpClose" class="singup__close"></div>
+            <div class="singup__body">
+                <h1 class="body__title">Записаться на диагностику</h1>
+                <form action="" class="singup__form">
+                    <input class="form__item" type="text" placeholder="Имя" >
+                    <input class="form__item" type="text" placeholder="Телефон" >
+                    <input class="form__item" type="text" placeholder="Опишите модель устройства и поломку" >
     
-    <script src="scripts/script.min.js"></script>
+                    <p class="form__text">Нажимая «Отправить заявку», вы соглашаетесь с политикой конфиндициальности</p>
+    
+                    <input id="singUp" type="submit" value="записаться" class="form__btn">
+                </form>
+            </div>
+        </div>
+    </div>    <script src="scripts/script.min.js"></script>
 </body>
 </html>

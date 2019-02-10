@@ -7,6 +7,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 10;
     background-color: #fff;
     @media screen and (max-width:480px){
         width: 100%;
@@ -28,6 +29,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 53px 0 0 0;
+    &-active {
+        height: 60%;
+    }
 }
 .diagnostic-mobile {
     width: 255px;
@@ -48,5 +52,23 @@
     }
     @media screen and (max-width:768px){
         margin-bottom: 32px;
+    }
+}
+.mobile-clients {
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    &__item {
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #646F75;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    &-active {
+        display: flex;
     }
 }

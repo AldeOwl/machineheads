@@ -62,17 +62,20 @@ let problem = [
             'Разбит экран',
         ]
     }
-]
+];
 
+//функция рисует меню моделей Iphone в выпадающем меню
 function drowProblemModel(){
+    $("<h4 class='problem-model__title'>Выберте модель</h4>").prependTo($(".device-problem"));
     $( ".device-problem" ).prepend( "<div class='problem-model'>" );
-
+    
     modelItem.forEach(item => {
         $("<span class='problem-model__item'></span>").html(item)
             .appendTo($(".problem-model"));
-    })
+    });
     $("<a class='problem-model__btn'>Все iPhone</a>").appendTo($(".problem-model"));
 }
+//функция рисует список возможных неисправностей по категориям
 function drowProblemList(arr){
     arr.forEach(item => {
         let table = $('<div/>', {
@@ -89,12 +92,12 @@ function drowProblemList(arr){
                 text: problem
             });
             table.append(text);
-        })
+        });
         $(".problem-list").append(table);
-    })
+    });
 }
 
-
+//обработка кликов по всем менюшкам и кнопкам
 $('#repairs').on('click', () => {
     $('.drop-window-problem').css('display', 'none');
     $('.drop-window-pair').toggle();
@@ -126,6 +129,46 @@ $('#main-btn').on('click', function() {
 $('#menu-btn').on('click', function() {
     $('.mobile-menu').removeClass('mobile-menu-active');
 });
+$('#checkPrice').on('click', function() {
+    $('.thank-you').addClass('thank-you-active');
+});
+$('#thankYouClose').on('click', function() {
+    $('.thank-you').removeClass('thank-you-active');
+});
+$('#thankYouBtn').on('click', function() {
+    $('.thank-you').removeClass('thank-you-active');
+});
+$('#diagnostic').on('click', function() {
+    $('.singup').addClass('singup-active');
+});
+$('#singUpClose').on('click', function() {
+    $('.singup').removeClass('singup-active');
+});
+$('#singUp').on('click', function() {
+    $('.singup').removeClass('singup-active');
+    $('.thank-you').addClass('thank-you-active');
+});
+$('#diagnosticMobile').on('click', function() {
+    $('.mobile-menu').removeClass('mobile-menu-active');
+    $('.singup').addClass('singup-active');
+});
+$('#clients').on('mouseover', function() {
+    $('.clients').show();
+});
+$('#clients').on('mouseout', function() {
+    $('.clients').hide();
+});
+$('.clients').on('mouseover', function() {
+    $('.clients').show();
+});
+$('.clients').on('mouseout', function() {
+    $('.clients').hide();
+});
+$('#mobileClients').on('click', function() {
+    $('.mobile-clients').toggle();
+    $('.list-menu').toggleClass('list-menu-active');
+});
+
 
 drowProblemModel();
 drowProblemList(problem);

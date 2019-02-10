@@ -24,6 +24,7 @@
     align-items: center;
 }
 .menu {
+    position: relative;
     width: 750px;
     display: flex;
     justify-content: space-between;
@@ -66,6 +67,7 @@
     background-color: #88D5C9;
     border-radius: 2px;
     border-style: none;
+    outline: none;
     cursor: pointer;
     @media screen and (max-width:1200px){
         display: none;
@@ -98,4 +100,22 @@
 }
 .menu-btn__item-third {
     top: 20px;
+}
+.clients {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 44%;
+    width: 118px;
+    background-color: #fff;
+    &__item {
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        color: #646F75;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
 }

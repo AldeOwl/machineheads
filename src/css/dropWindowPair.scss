@@ -1,19 +1,24 @@
 .drop-window-pair {
+    position: absolute;
+    z-index: 10;
     display: none;
+    max-width: 1272px;
+    min-width: 1000px;
     margin: 0 94px 0 74px;
     @media screen and (max-width:1200px){
         margin: 0;
-        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        min-width: auto;
     }
 }
 .cursor {
     height: 30px;
     display: flex;
-    padding: 0 0 0 265px;
+    position: relative;
+    left: 21%;
     &__pair {
         border: 15px solid transparent;
         border-bottom: 20px solid #fff;
@@ -51,6 +56,9 @@
     display: flex;
     justify-content: space-between;
     margin-left: 35px;
+    @media screen and (max-width:768px){
+        width: 75%;
+    }
     &__item {
         height: 110px;
         display: flex;
@@ -111,6 +119,19 @@
             justify-content: space-around;
             align-items: center;    
         }
+        @media screen and (max-width:768px){
+            height: 50px;
+            border-bottom: 2px solid #CAD0D4;
+        }
+        &__title {
+            display: none;
+            @media screen and (max-width:768px){
+                order: -1;
+                display: block;
+                margin: 20px 25px;
+                align-self: flex-start;
+            }
+        }
         &__item {
             padding: 0 22px 0 0;
             font-family: Lato;
@@ -122,6 +143,9 @@
             cursor: pointer;
             &:hover {
                 color: #FF9679;
+            }
+            @media screen and (max-width:768px){
+                display: none;
             }
         }
         &__btn {
@@ -140,6 +164,9 @@
                     padding: 0;
                 }
             }
+            @media screen and (max-width:768px){
+                display: none;
+            }
 
         }
     }
@@ -156,9 +183,9 @@
                 margin-right: 20px;
             }
             @media screen and (max-width:960px){
-                margin-right: 159px;
+                margin-right: 140px;
             }
-            @media screen and (max-width:769px){
+            @media screen and (max-width:768px){
                 margin-right: 26px;
             }
             &-title {
@@ -208,7 +235,7 @@
 .showPrice {
     width: 220px;
     height: 50px;
-    margin: 0 91px 0 0;
+    margin: 0 70px 0 0;
     border: 1px solid #88D5C9;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -224,5 +251,10 @@
     @media screen and (max-width:1200px){
         align-self: flex-start;
         margin: 0 0 37px 58px;
+    }
+    @media screen and (max-width:768px){
+        align-self: center;
+        margin: 30px 0 40px 0;
+        width: 95%;
     }
 }

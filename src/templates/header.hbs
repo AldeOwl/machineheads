@@ -7,7 +7,12 @@
         <a href="#" class="menu__item">О нас</a>
         <a href="#" id='repairs' class="menu__item">Ремонт</a>
         <a href="#" id='problem' class="menu__item">Проблема с устройством</a>
-        <a href="#" class="menu__item menu__item-arrow">Клиентам</a>
+        <a href="#" id="clients" class="menu__item menu__item-arrow">Клиентам</a>
+        <div class="clients">
+            <p class="clients__item">Акции</p>
+            <p class="clients__item">Бонусы</p>
+            <p class="clients__item">Гарантии</p>
+        </div>
         <a href="#" class="menu__item">Контакты</a>
         <a href="#" class="menu__item">Задать вопрос</a>
         <a href="#" class="menu__item">Магазин</a>
@@ -18,7 +23,7 @@
         <div class="menu-btn__item menu-btn__item-third "></div>
     </div>
     {{>mobileMenu}}
-    <button class="diagnostic">записаться на диагностику</button>
+    <button id="diagnostic" class="diagnostic">записаться на диагностику</button>
 </header>
     {{>dropWindowPair}}
     {{>dropWindowProblem}}

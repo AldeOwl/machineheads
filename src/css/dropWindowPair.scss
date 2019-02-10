@@ -105,6 +105,10 @@
         color: #646F75;
         font-weight: normal;
         background-color: #fff;
+        @media screen and (max-width:768px){
+            font-size: 20px;
+            margin: 0 5px 0 10px;
+        }
     }
 }
 .problem {
@@ -256,5 +260,20 @@
         align-self: center;
         margin: 30px 0 40px 0;
         width: 95%;
+    }
+}
+.pair__close {
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    @media screen and (max-width:1200px){
+        display: block;
     }
 }

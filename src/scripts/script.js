@@ -116,6 +116,12 @@ $('#mobile-problem').on('click', () => {
     $('.drop-window-pair').css('display', 'none');
     $('.drop-window-problem').toggle();
 });
+$('#pairClose').on('click', () => {
+    $('.drop-window-pair').toggle();
+});
+$('#problemClose').on('click', () => {
+    $('.drop-window-problem').toggle();
+});
 $('.device-menu__item').on('click', function() {
     $('.device-menu__item').removeClass('device-menu__item-active');
     $(this).addClass('device-menu__item-active');

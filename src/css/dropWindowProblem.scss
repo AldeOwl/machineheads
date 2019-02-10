@@ -14,3 +14,14 @@
         min-width: auto;
     }
 }
+.problem__close {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
